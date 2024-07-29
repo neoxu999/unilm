@@ -4,7 +4,7 @@ opencv-python==4.10.0.84
 pillow==10.4.0
 tokenizers==0.15.2
 transformers==4.38.0
-xformers==0.0.27
+xformers==0.0.25
 accelerate==0.22.0
 triton==3.0.0
 termcolor==2.3.0
