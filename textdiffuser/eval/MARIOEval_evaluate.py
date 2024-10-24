@@ -131,7 +131,7 @@ def parse_args():
         type=str,
         default='controlnet',
         required=False,
-        choices=['controlnet', 'deepfloyd', 'stablediffusion', 'textdiffuser']
+        choices=['controlnet', 'deepfloyd', 'stablediffusion', 'textdiffuser', 'rag']
     )
     parser.add_argument(
         "--gpu",
