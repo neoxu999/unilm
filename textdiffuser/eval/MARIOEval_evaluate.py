@@ -158,9 +158,13 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
-    datasets_with_images = ['TMDBEval500', 'OpenLibraryEval500', 'LAIONEval4000']
-    datasets = datasets_with_images + ['ChineseDrawText', 'DrawBenchText', 'DrawTextCreative']
-    methods = ['textdiffuser', 'controlnet', 'deepfloyd', 'stablediffusion', 'rag']
+    # datasets_with_images = ['TMDBEval500', 'OpenLibraryEval500', 'LAIONEval4000']
+    # datasets = datasets_with_images + ['ChineseDrawText', 'DrawBenchText', 'DrawTextCreative']
+    # methods = ['textdiffuser', 'controlnet', 'deepfloyd', 'stablediffusion', 'rag']
+
+    datasets_with_images = ['OpenLibraryEval500', ]
+    datasets = datasets_with_images
+    methods = ['rag']
 
     MARIOEval_evaluate_results(args.root, datasets_with_images, datasets, methods, args.gpu,
                                eval_clipscore_flag=True, eval_fid_flag=True, num_images_per_prompt=4)
