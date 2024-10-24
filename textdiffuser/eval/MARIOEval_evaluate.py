@@ -160,7 +160,7 @@ if __name__ == "__main__":
     os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
     datasets_with_images = ['TMDBEval500', 'OpenLibraryEval500', 'LAIONEval4000']
     datasets = datasets_with_images + ['ChineseDrawText', 'DrawBenchText', 'DrawTextCreative']
-    methods = ['textdiffuser', 'controlnet', 'deepfloyd', 'stablediffusion'] 
+    methods = ['textdiffuser', 'controlnet', 'deepfloyd', 'stablediffusion', 'rag']
 
     MARIOEval_evaluate_results(args.root, datasets_with_images, datasets, methods, args.gpu,
                                eval_clipscore_flag=True, eval_fid_flag=True, num_images_per_prompt=4)
