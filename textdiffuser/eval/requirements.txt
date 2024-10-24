@@ -1,7 +1,7 @@
-diffusers==0.16.0
 torch==2.3.0
 pycocoevalcap==1.2
 pytorch_fid==0.3.0
 sentencepiece==0.2.0
 scikit-learn==1.5.1
 -e git+https://github.com/openai/CLIP.git@main#egg=clip
+-e git+https://github.com/JingyeChen/diffusers.git#egg=diffusers
