@@ -165,7 +165,8 @@ if __name__ == "__main__":
     datasets_with_images = ['OpenLibraryEval500', ]
     datasets = datasets_with_images
     methods = ['rag']
+    root = r"/media/neox/storage/research/"
 
-    MARIOEval_evaluate_results(args.root, datasets_with_images, datasets, methods, args.gpu,
+    MARIOEval_evaluate_results(root, datasets_with_images, datasets, methods, args.gpu,
                                eval_clipscore_flag=True, eval_fid_flag=True, num_images_per_prompt=4)
-    merge_eval_results(args.root, methods)
+    merge_eval_results(root, methods)
